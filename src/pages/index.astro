@@ -1,0 +1,51 @@
+---
+import NavHeader from '../../ui/NavHeader.astro';
+import Main from '../../ui/Main.astro';
+import Footer from '../../ui/Footer.astro';
+import Image from '../../ui/Image.astro'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="https://i.morioh.com/2022/08/10/fc1cbfbc.webp">
+		<title>My Curriculum - Astro</title>
+	</head>
+	<body>
+	<header>
+		<NavHeader/>
+	</header>
+<hr>
+	<main>
+	<div class="containerImg">
+		<Image/>
+	</div>
+	<div class="container">
+		<Main/>
+	</div>
+	</main>
+
+	<footer>
+		<Footer/>
+	</footer>
+	</body>
+</html>
+
+<style>
+	body {
+		font-family: cursive;
+		background-image: url(https://fondosmil.com/fondo/3037.jpg);
+		/* background-position: center; */
+		background-size: cover;
+		/* background-repeat: no-repeat; */
+	}
+
+	.container {
+		width: 48%;
+	}
+
+	.containerImg {
+		width: 50%;
+		float: right;
+	}
+</style>
